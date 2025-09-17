@@ -1,18 +1,24 @@
-//to print sum of two pairs
+//to print sum of two 
 #include<stdio.h>
+int maxSumm(){
+for(int i=0;i<=n-k;i++){
+    int currSum=0;
+    for(int j=i;j<i+k;j++){
+        currSum=currSum+arr[j];
+
+    }
+    if(currSum>maxSum){
+        maxSum=currSum;
+    }
+}
+return maxSum;
+}
 int main(){
     int a[5];
     printf("Enter the elements of array \n");
     for(int i=0;i<5;i++){
         scanf("%d",&a[i]);
     }
-    int max=a[0]+a[1];
-     for(int i=0;i<5;i++){
-        for(int j=i-1;j<5;j++){
-            if(a[i]+a[j]>max){
-                max=a[i]+a[j];
-            }
-        }
-    }
-     printf("Pair with maximum value is %d",max);
+    int max=0;
+    for(int i=0;i);
 }
